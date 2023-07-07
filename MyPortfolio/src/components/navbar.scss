@@ -1,0 +1,133 @@
+@import '../variables.scss';
+
+.nav {
+	&__menu {
+		position: fixed;
+		background-color: $container-color;
+		inset-block: 0;
+		left: -100%;
+		width: 100%;
+		padding: 60px 30px;
+		transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+		z-index: 100;
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		column-gap: 24px;
+		border-bottom: 1px solid $border-color;
+		padding-block: 14px;
+	}
+	&__icon,
+	&__name {
+		color: $title-color;
+		font-size: 24px;
+	}
+	&__name {
+		font-weight: $weight-500;
+	}
+	&__toggle {
+		position: fixed;
+		top: 30px;
+		right: 30px;
+		width: 40px;
+		height: 40px;
+		border-radius: 5px;
+		background-color: $container-color;
+		padding: 12px 10px;
+		z-index: 100;
+	}
+	&__toggle span {
+		display: block;
+		width: 20px;
+		height: 2px;
+		border-radius: 2px;
+		background-color: $title-color;
+		margin-bottom: 5px;
+	}
+}
+.active-nav .nav-icon,
+.active-nav .nav__name {
+	color: $first-color;
+}
+.show-menu {
+	left: 0;
+}
+.animate-toggle span:first-child {
+	transform: rotate(45deg) translate(6px, 4px);
+}
+.animate-toggle span:nth-child(2) {
+	display: none;
+}
+.animate-toggle span:last-child {
+	transform: rotate(-45deg) translate(1px, 1px);
+}
+@media screen and (min-width: 1024px) {
+	.nav {
+		position: fixed;
+		left: 30px;
+		inset-block: 0;
+		display: flex;
+		align-items: top;
+		z-index: 100;
+
+		&__menu {
+			all: unset;
+		}
+		&__toggle {
+			display: none;
+		}
+		&__item {
+			margin-block: 20px;
+		}
+		&__link {
+			padding: 0;
+			border-bottom: none;
+			background-color: $container-color;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			position: relative;
+		}
+		&__link:hover,
+		.active-nav {
+			background-color: $first-color;
+		}
+		&__link:hover &__icon,
+		.active-nav &__icon {
+			color: $text-white;
+		}
+		&__link:hover &__name {
+			left: 27px;
+			color: $text-white;
+			opacity: 1;
+			visibility: visible;
+			border-radius: 0 30px 30px 0;
+		}
+
+		&__icon {
+			font-size: 20px;
+			margin-inline: auto;
+		}
+		&__name {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $first-color;
+			height: 100%;
+			line-height: 50px;
+			padding-inline: 30px 25px;
+			border-radius: 30px;
+			font-size: $small-font-size;
+			color: $text-white;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease;
+			z-index: -1;
+		}
+	}
+}
+
+.dark-theme .nav__link {
+	border-color: hsl(0, 0%, 20%);
+}

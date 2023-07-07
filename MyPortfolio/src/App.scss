@@ -1,0 +1,119 @@
+@import './variables.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.dark-theme {
+	$title-color: hsl(0, 0%, 100%);
+	$text-color: hsl(0, 0%, 80%);
+	$body-color: hsl(0, 0%, 7%);
+	$container-color: hsl(0, 1%, 17%);
+	$border-color: hsl(0, 0%, 15%);
+}
+
+body,
+input,
+textarea {
+	font-family: $body-font;
+	font-size: $normal-font-size;
+	font-weight: $weight-500;
+}
+
+body {
+	background-color: $body-color;
+	color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: $title-color;
+	font-family: $second-font;
+	font-weight: $weight-700;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button,
+input,
+textarea {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.grid {
+	display: grid;
+	gap: 30px;
+}
+.container {
+	max-width: 1140px;
+	margin-inline: auto;
+	padding-inline: 15px;
+}
+.section {
+	padding-block: 70px;
+}
+.section__title {
+	font-size: $big-font-size;
+	font-weight: $weight-800;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.section__title span {
+	color: $first-color;
+}
+.button {
+	display: inline-block;
+	color: $title-color;
+	border: 1px solid $first-color;
+	border-radius: 35px;
+	padding: 15px 70px 15px 15px;
+	font-family: $second-font;
+	font-size: $small-font-size;
+	font-weight: $weight-500;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.25 ease-in-out;
+}
+.button:hover {
+	color: $text-white;
+}
+.button:hover::before {
+	transform: translateX(0);
+}
+.button::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-color: $first-color;
+	z-index: -1;
+	transform: translateX(100%);
+	transition: all 0.5s ease-in-out;
+}
+.button__icon {
+	background-color: $first-color;
+	position: absolute;
+	inset-block: -2px;
+	right: 0;
+	width: 55px;
+	border-radius: 50%;
+	color: $text-white;
+	font-size: $large-font-size;
+	text-align: center;
+	line-height: 60px;
+}

@@ -1,0 +1,87 @@
+@import '../../variables.scss';
+
+.contact {
+	&__container {
+		grid-template-columns: 4fr 8fr;
+	}
+	&__title {
+		font-size: $h3-font-size;
+		font-weight: $weight-600;
+		margin-bottom: 1rem;
+	}
+	&__description {
+		font-size: $small-font-size;
+		line-height: 1.6;
+	}
+	&__description,
+	&__info .info__item {
+		margin-bottom: 20px;
+	}
+	&__info .info__item {
+		display: flex;
+		align-items: center;
+		column-gap: 16px;
+	}
+	&__info .info__icon {
+		color: $first-color;
+		font-size: $h2-font-size;
+	}
+	&__info .info__title {
+		font-size: $small-font-size;
+	}
+	&__info .info__desc {
+		font-family: $body-font;
+		font-size: $small-font-size;
+		font-weight: $weight-500;
+	}
+	&__socials {
+		display: flex;
+		column-gap: 16px;
+	}
+	&__social-link {
+		background-color: $container-color;
+		color: $title-color;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 44px;
+		transition: all 0.3s ease;
+	}
+	&__social-link:hover {
+		background-color: $first-color;
+		color: $text-white;
+	}
+}
+.form {
+	&__input-group {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+	}
+	&__input-div {
+		margin-bottom: 30px;
+	}
+	&__control {
+		border: 1px solid $border-color;
+		background-color: $container-color;
+		color: $title-color;
+		width: 100% !important;
+		padding: 12px 24px;
+		border-radius: 30px;
+		font-size: $small-font-size;
+		transition: all 0.3s ease;
+	}
+	&__control:focus {
+		border-color: $first-color;
+	}
+}
+.textarea {
+	resize: none;
+	height: 160px;
+	width: 100%;
+}
+.contact__button-icon {
+	font-size: $h3-font-size;
+	line-height: 64px;
+}

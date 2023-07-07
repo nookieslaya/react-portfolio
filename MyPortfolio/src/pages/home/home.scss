@@ -1,0 +1,54 @@
+@import '../../variables.scss';
+
+.home {
+	grid-template-columns: 7.32fr 7.68fr;
+	align-items: center;
+	padding: 80px 40px;
+	height: 100vh;
+
+	&__img {
+		height: 100%;
+		object-fit: cover;
+		border-radius: 30px;
+		box-shadow: 0 08px hsla(0, 0%, 0%, 0.3);
+		z-index: 1;
+	}
+	&__data {
+		width: 600px;
+		margin-inline: auto;
+		padding-top: 20px;
+	}
+	&__title {
+		position: relative;
+		font-size: $h1-font-size;
+		line-height: 1.24;
+		padding-left: 70px;
+	}
+	&__title span {
+		color: $first-color;
+	}
+	&__title::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 22%;
+		width: 40px;
+		height: 5px;
+		border-radius: 10px;
+		background-color: $first-color;
+	}
+	&__description {
+		line-height: 1.825;
+		margin-bottom: 32px;
+	}
+}
+
+.color__block {
+	position: fixed;
+	height: 200%;
+	width: 100%;
+	background-color: $first-color;
+	top: -50%;
+	right: -83%;
+	transform: rotate(10deg);
+}

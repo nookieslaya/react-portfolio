@@ -1,0 +1,101 @@
+@import '../../variables.scss';
+.portfolio {
+	&__container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	&__modal {
+		position: fixed;
+		inset: 0;
+		background-color: hsla(0, 0%, 0%, 0.7);
+		z-index: 1000;
+		display: grid;
+		place-items: center;
+		padding: 15px;
+	}
+	&__modal-content {
+		background-color: $container-color;
+		max-width: 650px;
+		width: 100%;
+		padding: 32px;
+		border-radius: 10px;
+		position: relative;
+	}
+
+	&__item {
+		position: relative;
+		border-radius: 10px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	&__img {
+		height: 250px;
+		width: 100%;
+		object-fit: cover;
+		vertical-align: middle;
+	}
+	&__hover {
+		background-color: $first-color;
+		position: absolute;
+		inset: 0;
+		display: grid;
+		place-items: center;
+		opacity: 0;
+		transition: all 0.5s ease;
+	}
+	&__item:hover .portfolio__hover {
+		opacity: 1;
+	}
+
+	&__title {
+		color: $text-white;
+		font-size: $large-font-size;
+		transform: translateY(-20px);
+		transition: all 0.5s ease;
+	}
+	&__item:hover .portfolio__title {
+		transform: translateY(0);
+	}
+}
+
+.modal__close {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -3.5%;
+	right: -8.5%;
+	filter: invert(0.8);
+}
+
+.modal__title {
+	text-align: center;
+	color: $first-color;
+	font-size: $h2-font-size;
+	letter-spacing: 2px;
+	margin-bottom: 24px;
+}
+
+.modal__list {
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 10px !important;
+	margin-bottom: 24px;
+}
+
+.modal__item {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.item__icon {
+	display: flex;
+}
+
+.item__title,
+.item__details {
+	color: $title-color;
+	font-size: $small-font-size;
+}
+
+.item__details {
+	font-weight: $weight-600;
+}
