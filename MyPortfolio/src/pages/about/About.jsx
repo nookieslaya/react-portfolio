@@ -12,11 +12,11 @@ const About = () => {
 		<main className='section container'>
 			<section className='about'>
 				<h2 className='section__title'>
-					About <span>Me</span>
+					O <span>Mnie</span>
 				</h2>
 				<div className='about__container grid'>
 					<div className='about__info'>
-						<h3 className='section__subtitle'>Personal Infooo</h3>
+						<h3 className='section__subtitle'>Krótko o mnie</h3>
 						<ul className='info__list grid'>
 							<Info />
 						</ul>

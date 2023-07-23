@@ -33,15 +33,15 @@ $text-white: #fff;
 $body-font: 'Open Sans', sans-serif;
 $second-font: 'Poppins', sans-serif;
 
-$big-font-size: --big-font-size;
-$h1-font-size: --h1-font-size;
-$h2-font-size: --h2-font-size;
-$h3-font-size: --h3-font-size;
-$large-font-size: --large-font-size;
-$normal-font-size: --normal-font-size;
-$small-font-size: --small-font-size;
-$smaller-font-size: --smaller-font-size;
-$tiny-font-size: --tiny-font-size;
+$big-font-size: var(--big-font-size);
+$h1-font-size: var(--h1-font-size);
+$h2-font-size: var(--h2-font-size);
+$h3-font-size: var(--h3-font-size);
+$large-font-size: var(--large-font-size);
+$normal-font-size: var(--normal-font-size);
+$small-font-size: var(--small-font-size);
+$smaller-font-size: var(--smaller-font-size);
+$tiny-font-size: var(--tiny-font-size);
 
 $weight-400: 400;
 $weight-500: 500;
