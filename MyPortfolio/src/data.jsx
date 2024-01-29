@@ -104,7 +104,7 @@ export const personalInfo = [
 	},{
 		id: 11,
 		title: 'Github : ',
-		description: <a href="https://github.com/nookieslaya">https://github.com/nookieslaya</a>,
+		description: <a target='_blank' href="https://github.com/nookieslaya">https://github.com/nookieslaya</a>,
 	},
 ]
 

@@ -26,6 +26,11 @@
 	&__list &__description {
 		color: $title-color;
 		font-weight: $weight-600;
+		a{
+			text-decoration: none;
+			color: white;
+			cursor: pointer;
+		}
 	}
 }
 .stats {
@@ -147,6 +152,7 @@
 		font-weight: $weight-600;
 		position: relative;
 		padding-left: 26px;
+
 	}
 	&__subtitle span::before {
 		content: '';
