@@ -8,14 +8,14 @@ import { useEffect } from 'react'
 import '../variables.scss'
 
 const getStorageColor = () => {
-	let color = 'hsl(271, 76%, 53%)'
+	let color = 'hsl(43, 74%, 49%)'
 	if (localStorage.getItem('color')) {
 		color = localStorage.getItem('color')
 	}
 	return color
 }
 const getStorageTheme = () => {
-	let theme = 'light-theme'
+	let theme = 'dark-theme'
 	if (localStorage.getItem('theme')) {
 		theme = localStorage.getItem('theme')
 	}

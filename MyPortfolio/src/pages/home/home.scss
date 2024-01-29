@@ -43,7 +43,7 @@
 	}
 	&__description {
 		line-height: 1.825;
-		margin-bottom: 32px;
+		margin: 32px 0;
 		font-size: $large-font-size;
 	}
 }
@@ -55,4 +55,12 @@
 	background-color: $first-color;
 	top: -50%;
 	right: -73%;
+}
+.slidingTextContainer {
+	position: absolute;
+	font-size: 10vh;
+	bottom: 0;
+	white-space: nowrap;
+	opacity: 0.3;
+	width: 50%;
 }

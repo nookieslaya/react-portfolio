@@ -1,13 +1,10 @@
 import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaBriefcase, FaGraduationCap, FaCode } from 'react-icons/fa'
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi'
 
-import Work1 from './assets/project-1.jpeg'
-import Work2 from './assets/project-2.jpg'
-import Work3 from './assets/project-3.jpeg'
-import Work4 from './assets/project-4.jpeg'
-import Work5 from './assets/project-5.jpg'
-import Work6 from './assets/project-6.jpg'
-
+import Work1 from './assets/wszedziedobrze.jpg'
+import Work2 from './assets/caboverde.jpg'
+import Work3 from './assets/work3.png'
+import Work4 from './assets/muala.png'
 import Theme1 from './assets/purple.png'
 import Theme2 from './assets/red.png'
 import Theme3 from './assets/blueviolet.png'
@@ -18,6 +15,8 @@ import Theme7 from './assets/yellowgreen.png'
 import Theme8 from './assets/orange.png'
 import Theme9 from './assets/green.png'
 import Theme10 from './assets/yellow.png'
+import { DiJsBadge, DiCss3, DiHtml5, DiWordpress, DiReact, DiMysql,DiPhp} from 'react-icons/di'
+const style = { color: 'white', fontSize: '1.5em' }
 
 export const links = [
 	{
@@ -52,37 +51,43 @@ export const links = [
 export const personalInfo = [
 	{
 		id: 1,
-		title: 'Imię : ',
+		title: 'First Name : ',
 		description: 'Radek',
 	},
 
 	{
 		id: 2,
-		title: 'Nazwisko : ',
+		title: 'Last Name : ',
 		description: 'Dumin',
 	},
 
 	{
 		id: 3,
-		title: 'Wiek : ',
-		description: '33',
+		title: 'Age : ',
+		description: '34 Years',
+	},
+
+	{
+		id: 4,
+		title: 'Nationality : ',
+		description: 'Polish',
 	},
 
 	{
 		id: 5,
-		title: 'Gotowość do pracy : ',
-		description: 'Od zaraz!',
+		title: 'Available : ',
+		description: 'immediately',
 	},
 
 	{
 		id: 6,
-		title: 'Miasto : ',
+		title: 'City : ',
 		description: 'Kielce',
 	},
 
 	{
 		id: 7,
-		title: 'Telefon : ',
+		title: 'Phone : ',
 		description: '+48783812846',
 	},
 
@@ -94,78 +99,51 @@ export const personalInfo = [
 
 	{
 		id: 10,
-		title: 'Języki : ',
-		description: 'polski, angielski',
+		title: 'Langages : ',
+		description: 'Polish, English',
+	},{
+		id: 11,
+		title: 'Github : ',
+		description: <a href="https://github.com/nookieslaya">https://github.com/nookieslaya</a>,
 	},
 ]
 
 export const stats = [
 	{
 		id: 1,
-		no: '1,5 ',
-		title: 'Roku doświadczenia<br /> Zawodowego',
+		no: '1,5',
+		title: 'Years of <br /> Experience',
 	},
 
 	{
 		id: 2,
-		no: '20+',
-		title: 'Ukończonych <br /> Projektów',
+		no: '10+',
+		title: 'Completed <br /> Projects',
 	},
 ]
 
 export const resume = [
-	{
-		id: 1,
-		category: 'experience',
-		icon: <FaBriefcase />,
-		year: '2018 - PRESENT',
-		title: 'Web Developer <span> Envato </span>',
-		desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
-	},
 
 	{
 		id: 2,
 		category: 'experience',
 		icon: <FaBriefcase />,
-		year: '2013 - 2018',
-		title: 'UI/UX Designer <span> Themeforest </span>',
-		desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+		year: '10.2023 - 12.2023',
+		title: 'Junior Software Developer <span> Infonetax </span>',
+		desc: 'Working on changing the design of the cloud version of the Mobevo program. Introducing new functionality in the program.'
+		,
+		desc2:
+			'My main task was to completely change the appearance of the program based on the previously designed design, adjust the appearance to mobile devices. Additionally I introduced new functionalities in the program.',
 	},
-
 	{
-		id: 3,
+		id: 1,
 		category: 'experience',
 		icon: <FaBriefcase />,
-		year: '2005 - 2013',
-		title: 'Consultant <span> Videohive </span>',
-		desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
-	},
-
-	{
-		id: 4,
-		category: 'education',
-		icon: <FaGraduationCap />,
-		year: '2015',
-		title: 'Engineering Degree <span> Oxford University </span>',
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
-	},
-
-	{
-		id: 5,
-		category: 'education',
-		icon: <FaGraduationCap />,
-		year: '2012',
-		title: 'Master Degree <span> KIEV University </span>',
-		desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
-	},
-
-	{
-		id: 6,
-		category: 'education',
-		icon: <FaGraduationCap />,
-		year: '2009',
-		title: 'Bachelor Degree <span> Tunis High School </span>',
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
+		year: '10.2021 - 06.2023',
+		title: 'Web Developer <span> MassInternet </span>',
+		desc: 'Creating websites for individual clients based on prepared designs. Contact and collaboration with key clients.',
+		desc2:
+			'My main task was to create websites, online stores, and templates for the WordPress CMS. For website development, I primarily used HTML, SCSS, JavaScript, PHP, WordPress + ACF. I also worked with WooCommerce and Shoper online stores.',
 	},
 ]
 
@@ -173,49 +151,41 @@ export const skills = [
 	{
 		id: 1,
 		title: 'Html',
-		percentage: '25',
+		background: <DiHtml5 />,
 	},
 
 	{
 		id: 2,
 		title: 'Javascript',
-		percentage: '89',
+		background: <DiJsBadge />,
 	},
 
 	{
 		id: 3,
 		title: 'Css',
-		percentage: '70',
-	},
-
-	{
-		id: 4,
-		title: 'Php',
-		percentage: '66',
+		background: <DiCss3 />,
 	},
 
 	{
 		id: 5,
 		title: 'Wordpress',
-		percentage: '95',
-	},
-
-	{
-		id: 6,
-		title: 'Jquery',
-		percentage: '50',
-	},
-
-	{
-		id: 7,
-		title: 'Angular',
-		percentage: '65',
+		background: <DiWordpress />,
 	},
 
 	{
 		id: 8,
 		title: 'React',
-		percentage: '45',
+		background: <DiReact />,
+	},
+	{
+		id: 9,
+		title: 'PHP',
+		background: <DiPhp />,
+	},
+	{
+		id: 10,
+		title: 'SQL',
+		background: <DiMysql />,
 	},
 ]
 
@@ -223,27 +193,31 @@ export const portfolio = [
 	{
 		id: 1,
 		img: Work1,
-		title: 'Photo Editing',
+		title: 'Website',
 		details: [
 			{
 				icon: <FiFileText />,
 				title: 'Project : ',
-				desc: 'Photo',
+				desc: 'Website',
 			},
 			{
 				icon: <FiUser />,
 				title: 'Client : ',
-				desc: 'Dribble',
+				desc: 'Wife :)',
 			},
 			{
 				icon: <FaCode />,
 				title: 'Language : ',
-				desc: 'Adobe Photoshop',
+				desc: 'HTML, SCSS, JavaScript, PHP, Wordpress + ACF',
 			},
 			{
 				icon: <FiExternalLink />,
 				title: 'Preview : ',
-				desc: 'www.dribble.com',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://www.wszedzie-dobrze.pl'>
+						Link to website
+					</a>
+				),
 			},
 		],
 	},
@@ -251,135 +225,92 @@ export const portfolio = [
 	{
 		id: 2,
 		img: Work2,
-		title: 'Website Design',
+		title: 'Website',
 		details: [
 			{
 				icon: <FiFileText />,
 				title: 'Project : ',
-				desc: 'Website',
+				desc: 'React Website',
 			},
 			{
 				icon: <FiUser />,
 				title: 'Client : ',
-				desc: 'Dribble',
+				desc: 'Me',
 			},
 			{
 				icon: <FaCode />,
 				title: 'Language : ',
-				desc: 'React JS',
+				desc: 'React, Tailwind',
 			},
 			{
 				icon: <FiExternalLink />,
 				title: 'Preview : ',
-				desc: 'www.dribble.com',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://gilded-sunflower-82ea89.netlify.app/'>
+						Link to website
+					</a>
+				),
 			},
 		],
 	},
-
 	{
 		id: 3,
 		img: Work3,
-		title: 'Video Editing',
+		title: 'React App',
 		details: [
 			{
 				icon: <FiFileText />,
 				title: 'Project : ',
-				desc: 'Video',
+				desc: 'React App',
 			},
 			{
 				icon: <FiUser />,
 				title: 'Client : ',
-				desc: 'Dribble',
+				desc: 'Me',
 			},
 			{
 				icon: <FaCode />,
 				title: 'Language : ',
-				desc: 'Adobe Premium',
+				desc: 'React, Tailwind, Firebase',
 			},
 			{
 				icon: <FiExternalLink />,
 				title: 'Preview : ',
-				desc: 'www.dribble.com',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://cryptogrid-b6fb7.web.app/'>
+						Link to website
+					</a>
+				),
 			},
 		],
-	},
-
-	{
+	},{
 		id: 4,
 		img: Work4,
-		title: 'Video Editing',
+		title: 'React App',
 		details: [
 			{
 				icon: <FiFileText />,
 				title: 'Project : ',
-				desc: 'Video',
+				desc: 'React App',
 			},
 			{
 				icon: <FiUser />,
 				title: 'Client : ',
-				desc: 'Dribble',
+				desc: 'Me',
 			},
 			{
 				icon: <FaCode />,
 				title: 'Language : ',
-				desc: 'Adobe Premium',
+				desc: 'React, Tailwind, Leaflet, OpenStreet Map',
 			},
 			{
 				icon: <FiExternalLink />,
 				title: 'Preview : ',
-				desc: 'www.dribble.com',
-			},
-		],
-	},
-
-	{
-		id: 5,
-		img: Work5,
-		title: 'Landing Page',
-		details: [
-			{
-				title: 'Project : ',
-				desc: 'Website',
-			},
-			{
-				title: 'Client : ',
-				desc: 'Dribble',
-			},
-			{
-				title: 'Language : ',
-				desc: 'React JS, Node JS',
-			},
-			{
-				title: 'Preview : ',
-				desc: 'www.dribble.com',
-			},
-		],
-	},
-
-	{
-		id: 6,
-		img: Work6,
-		title: 'Photo Editing',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Photo',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Dribble',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'Adobe Photoshop',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: 'www.dibble.com',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://mualatracker.pl'>
+						Link to website
+					</a>
+				),
 			},
 		],
 	},

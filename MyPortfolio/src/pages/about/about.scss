@@ -2,10 +2,12 @@
 
 .about__container,
 .info__list,
-.stats,
-.resume__container {
+.stats {
 	grid-template-columns: repeat(2, 1fr);
 	align-items: flex-start;
+}
+.resume__container {
+	grid-template-columns: 1fr;
 }
 .info__list {
 	row-gap: 20px;
@@ -71,15 +73,19 @@
 	}
 	&__title {
 		font-family: $body-font;
-		font-size: $normal-font-size;
+		font-size: $large-font-size;
 		text-align: center;
-		font-weight: $weight-400;
+		font-weight: $weight-600;
 		margin-top: 24px;
 	}
 }
-.progress__circle {
-	width: 120px;
-	height: 120px;
+.skill__icon {
+	font-size: 50px;
+}
+.progress__box {
+	text-align: center;
+	color: $first-color;
+	font-weight: bold;
 }
 
 .CircularProgressbar-path {

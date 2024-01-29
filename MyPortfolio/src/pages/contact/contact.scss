@@ -52,6 +52,9 @@
 		background-color: $first-color;
 		color: $text-white;
 	}
+	a {
+		color: $title-color;
+	}
 }
 .form {
 	&__input-group {
@@ -68,7 +71,6 @@
 		color: $title-color;
 		width: 100% !important;
 		padding: 12px 24px;
-		border-radius: 30px;
 		font-size: $small-font-size;
 		transition: all 0.3s ease;
 	}
