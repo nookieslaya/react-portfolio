@@ -6,10 +6,16 @@ import Skills from '../../components/Skills'
 import { resume } from '../../data'
 import './about.scss'
 import ResumeItem from '../../components/ResumeItem'
+import {motion} from "framer-motion";
 
 const About = () => {
 	return (
-		<main className='section container'>
+		<motion.main
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 4 }}
+			exit={{ opacity: 0 }}
+			transition={{ duration: 1.5 }}
+			className='section container'>
 			<section className='about'>
 				<h2 className='section__title'>
 					About <span>Me</span>
@@ -51,7 +57,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</main>
+		</motion.main>
 	)
 }
 

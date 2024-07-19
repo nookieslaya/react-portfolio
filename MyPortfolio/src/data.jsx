@@ -5,6 +5,7 @@ import Work1 from './assets/wszedziedobrze.jpg'
 import Work2 from './assets/caboverde.jpg'
 import Work3 from './assets/work3.png'
 import Work4 from './assets/muala.png'
+import Work5 from './assets/ecommapp.png'
 import Theme1 from './assets/purple.png'
 import Theme2 from './assets/red.png'
 import Theme3 from './assets/blueviolet.png'
@@ -111,7 +112,7 @@ export const personalInfo = [
 export const stats = [
 	{
 		id: 1,
-		no: '1,5',
+		no: '2,5',
 		title: 'Years of <br /> Experience',
 	},
 
@@ -283,7 +284,8 @@ export const portfolio = [
 				),
 			},
 		],
-	},{
+	},
+	{
 		id: 4,
 		img: Work4,
 		title: 'React App',
@@ -308,6 +310,36 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://mualatracker.pl'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 5,
+		img: Work5,
+		title: 'ecommerce MERN React App',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'ecommerce MERN React App',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'React, Tailwind, MongoDB, Express, NodeJS, ',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://ubiquitous-mermaid-a55ac5.netlify.app/'>
 						Link to website
 					</a>
 				),

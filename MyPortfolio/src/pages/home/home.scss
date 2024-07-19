@@ -50,11 +50,13 @@
 
 .color__block {
 	position: fixed;
+	display: flex;
 	height: 200%;
-	width: 100%;
-	background-color: $first-color;
+	width: 25%;
+	background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,1) 10%, $first-color 50%);
 	top: -50%;
-	right: -73%;
+	right: 0;
 }
 .slidingTextContainer {
 	position: absolute;

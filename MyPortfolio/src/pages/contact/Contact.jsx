@@ -2,6 +2,8 @@ import { FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookF, FaTwitter, FaDribbble } 
 import { FiSend } from 'react-icons/fi'
 import './contact.scss'
 import emailjs from '@emailjs/browser'
+import {motion} from "framer-motion";
+
 
 const Contact = () => {
 	const sendEmail = e => {
@@ -14,8 +16,14 @@ const Contact = () => {
 		)
 	}
 
+
 	return (
-		<section className='contact section'>
+		<motion.section
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 4 }}
+			exit={{ opacity: 0 }}
+			transition={{ duration: 1.5 }}
+			className='contact section'>
 			<h2 className='section__title'>
 				Get In <span>Touch</span>
 			</h2>
@@ -76,7 +84,7 @@ const Contact = () => {
 					</button>
 				</form>
 			</div>
-		</section>
+		</motion.section>
 	)
 }
 
