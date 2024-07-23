@@ -6,6 +6,7 @@ import Work2 from './assets/caboverde.jpg'
 import Work3 from './assets/work3.png'
 import Work4 from './assets/muala.png'
 import Work5 from './assets/ecommapp.png'
+import Work6 from './assets/nextPortfolio.webp'
 import Theme1 from './assets/purple.png'
 import Theme2 from './assets/red.png'
 import Theme3 from './assets/blueviolet.png'
@@ -340,6 +341,36 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://ubiquitous-mermaid-a55ac5.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 6,
+		img: Work6,
+		title: 'Next.JS Portfolio Website',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Next.JS Portfolio Website',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'Next.JS, Tailwind, FM, Aceternity UI',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://serene-dusk-9698e4.netlify.app/'>
 						Link to website
 					</a>
 				),
