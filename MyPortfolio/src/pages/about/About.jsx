@@ -1,7 +1,7 @@
 import Info from '../../components/Info'
 import Stats from '../../components/Stats'
 import { FaDownload } from 'react-icons/fa'
-import CV from '../../assets/radoslawdumin.pdf'
+import CV from '../../assets/radosławdumincv2024.pdf'
 import Skills from '../../components/Skills'
 import { resume } from '../../data'
 import './about.scss'
