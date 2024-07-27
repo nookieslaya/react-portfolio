@@ -7,6 +7,7 @@ import Work3 from './assets/work3.png'
 import Work4 from './assets/muala.png'
 import Work5 from './assets/ecommapp.png'
 import Work6 from './assets/nextPortfolio.webp'
+import Work7 from './assets/AirdropApp.webp'
 import Theme1 from './assets/purple.png'
 import Theme2 from './assets/red.png'
 import Theme3 from './assets/blueviolet.png'
@@ -371,6 +372,36 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://serene-dusk-9698e4.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 7,
+		img: Work7,
+		title: 'AirdropApp',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'MERN React App ',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'React,Zustand, TypeScript, MERN, Tailwind, Framer Motion, Aceternity UI, ShadCn',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://grand-scone-4dcf70.netlify.app/'>
 						Link to website
 					</a>
 				),
