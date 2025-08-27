@@ -1,12 +1,12 @@
 import Info from '../../components/Info'
 import Stats from '../../components/Stats'
 import { FaDownload } from 'react-icons/fa'
-import CV from '../../assets/radosławdumincv2024.pdf'
+import CV from '../../assets/radosławdumincv2025.pdf'
 import Skills from '../../components/Skills'
 import { resume } from '../../data'
 import './about.scss'
 import ResumeItem from '../../components/ResumeItem'
-import {motion} from "framer-motion";
+import { motion } from 'framer-motion'
 
 const About = () => {
 	return (

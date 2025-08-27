@@ -1,13 +1,26 @@
-import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen, FaBriefcase, FaGraduationCap, FaCode } from 'react-icons/fa'
+import {
+	FaHome,
+	FaUser,
+	FaFolderOpen,
+	FaEnvelopeOpen,
+	FaBriefcase,
+	FaGraduationCap,
+	FaCode,
+	FaVuejs,
+} from 'react-icons/fa'
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi'
+import { SiNuxtdotjs, SiTailwindcss } from 'react-icons/si'
 
 import Work1 from './assets/wszedziedobrze.jpg'
 import Work2 from './assets/caboverde.jpg'
 import Work3 from './assets/work3.png'
+import Work9 from './assets/sum.webp'
 import Work4 from './assets/muala.png'
 import Work5 from './assets/ecommapp.png'
 import Work6 from './assets/nextPortfolio.webp'
 import Work7 from './assets/AirdropApp.webp'
+import Work8 from './assets/bitzone.webp'
+import Work11 from './assets/aiagent.png'
 import Theme1 from './assets/purple.png'
 import Theme2 from './assets/red.png'
 import Theme3 from './assets/blueviolet.png'
@@ -18,7 +31,7 @@ import Theme7 from './assets/yellowgreen.png'
 import Theme8 from './assets/orange.png'
 import Theme9 from './assets/green.png'
 import Theme10 from './assets/yellow.png'
-import { DiJsBadge, DiCss3, DiHtml5, DiWordpress, DiReact, DiMysql,DiPhp} from 'react-icons/di'
+import { DiJsBadge, DiCss3, DiHtml5, DiWordpress, DiReact, DiMysql, DiPhp } from 'react-icons/di'
 const style = { color: 'white', fontSize: '1.5em' }
 
 export const links = [
@@ -67,7 +80,7 @@ export const personalInfo = [
 	{
 		id: 3,
 		title: 'Age : ',
-		description: '34 Years',
+		description: '35 Years',
 	},
 
 	{
@@ -104,37 +117,50 @@ export const personalInfo = [
 		id: 10,
 		title: 'Langages : ',
 		description: 'Polish, English',
-	},{
+	},
+	{
 		id: 11,
 		title: 'Github : ',
-		description: <a target='_blank' href="https://github.com/nookieslaya">https://github.com/nookieslaya</a>,
+		description: (
+			<a target='_blank' href='https://github.com/nookieslaya'>
+				https://github.com/nookieslaya
+			</a>
+		),
 	},
 ]
 
 export const stats = [
 	{
 		id: 1,
-		no: '2,5',
+		no: '4,5',
 		title: 'Years of <br /> Experience',
 	},
 
 	{
 		id: 2,
-		no: '10+',
+		no: '30+',
 		title: 'Completed <br /> Projects',
 	},
 ]
 
 export const resume = [
-
+	{
+		id: 3,
+		category: 'experience',
+		icon: <FaBriefcase />,
+		year: '09.2024 - 09.2025',
+		title: 'Frontend Developer <span> Cogitech </span>',
+		desc: 'Creating and developing websites and web applications based on prepared designs.',
+		desc2:
+			'Main responsibilities included building website templates using ACF and WordPress, as well as developing web applications primarily with Vue, Nuxt 3, Tailwind CSS, and Nuxt UI.',
+	},
 	{
 		id: 2,
 		category: 'experience',
 		icon: <FaBriefcase />,
 		year: '10.2023 - 12.2023',
 		title: 'Junior Software Developer <span> Infonetax </span>',
-		desc: 'Working on changing the design of the cloud version of the Mobevo program. Introducing new functionality in the program.'
-		,
+		desc: 'Working on changing the design of the cloud version of the Mobevo program. Introducing new functionality in the program.',
 		desc2:
 			'My main task was to completely change the appearance of the program based on the previously designed design, adjust the appearance to mobile devices. Additionally I introduced new functionalities in the program.',
 	},
@@ -168,6 +194,11 @@ export const skills = [
 		title: 'Css',
 		background: <DiCss3 />,
 	},
+	{
+		id: 13,
+		title: 'Tailwind',
+		background: <SiTailwindcss />,
+	},
 
 	{
 		id: 5,
@@ -179,6 +210,18 @@ export const skills = [
 		id: 8,
 		title: 'React',
 		background: <DiReact />,
+	},
+
+	{
+		id: 12,
+		title: 'Nuxt 3',
+		background: <SiNuxtdotjs />,
+	},
+
+	{
+		id: 11,
+		title: 'Vue',
+		background: <FaVuejs />,
 	},
 	{
 		id: 9,
@@ -311,21 +354,22 @@ export const portfolio = [
 				icon: <FiExternalLink />,
 				title: 'Preview : ',
 				desc: (
-					<a className='portfolio-link' target='_blank' href='https://mualatracker.pl'>
+					<a className='portfolio-link' target='_blank' href='https://dreamy-pixie-302b6f.netlify.app/'>
 						Link to website
 					</a>
 				),
 			},
 		],
-	},{
+	},
+	{
 		id: 5,
-		img: Work5,
-		title: 'ecommerce MERN React App',
+		img: Work9,
+		title: 'AI Summarizer',
 		details: [
 			{
 				icon: <FiFileText />,
 				title: 'Project : ',
-				desc: 'ecommerce MERN React App',
+				desc: 'Powered by AI article summarizer',
 			},
 			{
 				icon: <FiUser />,
@@ -335,19 +379,20 @@ export const portfolio = [
 			{
 				icon: <FaCode />,
 				title: 'Language : ',
-				desc: 'React, Tailwind, MongoDB, Express, NodeJS, ',
+				desc: 'React, Tailwind, OpenAi ',
 			},
 			{
 				icon: <FiExternalLink />,
 				title: 'Preview : ',
 				desc: (
-					<a className='portfolio-link' target='_blank' href='https://ubiquitous-mermaid-a55ac5.netlify.app/'>
+					<a className='portfolio-link' target='_blank' href='https://creative-fenglisu-c99f3d.netlify.app/'>
 						Link to website
 					</a>
 				),
 			},
 		],
-	},{
+	},
+	{
 		id: 6,
 		img: Work6,
 		title: 'Next.JS Portfolio Website',
@@ -377,15 +422,47 @@ export const portfolio = [
 				),
 			},
 		],
-	},{
-		id: 7,
-		img: Work7,
-		title: 'AirdropApp',
+	},
+	// {
+	// 	id: 7,
+	// 	img: Work7,
+	// 	title: 'AirdropApp',
+	// 	details: [
+	// 		{
+	// 			icon: <FiFileText />,
+	// 			title: 'Project : ',
+	// 			desc: 'MERN React App ',
+	// 		},
+	// 		{
+	// 			icon: <FiUser />,
+	// 			title: 'Client : ',
+	// 			desc: 'Me',
+	// 		},
+	// 		{
+	// 			icon: <FaCode />,
+	// 			title: 'Language : ',
+	// 			desc: 'React,Zustand, TypeScript, MERN, Tailwind, Framer Motion, Aceternity UI, ShadCn',
+	// 		},
+	// 		{
+	// 			icon: <FiExternalLink />,
+	// 			title: 'Preview : ',
+	// 			desc: (
+	// 				<a className='portfolio-link' target='_blank' href='https://grand-scone-4dcf70.netlify.app/'>
+	// 					Link to website
+	// 				</a>
+	// 			),
+	// 		},
+	// 	],
+	// },
+	{
+		id: 8,
+		img: Work8,
+		title: 'BitZone Next.JS website',
 		details: [
 			{
 				icon: <FiFileText />,
 				title: 'Project : ',
-				desc: 'MERN React App ',
+				desc: 'React GSAP CryptoMarket Website ',
 			},
 			{
 				icon: <FiUser />,
@@ -395,13 +472,44 @@ export const portfolio = [
 			{
 				icon: <FaCode />,
 				title: 'Language : ',
-				desc: 'React,Zustand, TypeScript, MERN, Tailwind, Framer Motion, Aceternity UI, ShadCn',
+				desc: 'React,GSAP,Tailwind, ',
 			},
 			{
 				icon: <FiExternalLink />,
 				title: 'Preview : ',
 				desc: (
-					<a className='portfolio-link' target='_blank' href='https://grand-scone-4dcf70.netlify.app/'>
+					<a className='portfolio-link' target='_blank' href='https://cosmic-pasca-99384c.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},
+	{
+		id: 11,
+		img: Work11,
+		title: 'Simple AI Agent',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Simple browser only AI Agent',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'React, Typescript ',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://celebrated-jalebi-93b42e.netlify.app/'>
 						Link to website
 					</a>
 				),
