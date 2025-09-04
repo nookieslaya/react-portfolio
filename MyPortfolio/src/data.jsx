@@ -21,6 +21,7 @@ import Work6 from './assets/nextPortfolio.webp'
 import Work7 from './assets/AirdropApp.webp'
 import Work8 from './assets/bitzone.webp'
 import Work11 from './assets/aiagent.png'
+import Work13 from './assets/airdrop.png'
 import Theme1 from './assets/purple.png'
 import Theme2 from './assets/red.png'
 import Theme3 from './assets/blueviolet.png'
@@ -510,6 +511,37 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://celebrated-jalebi-93b42e.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},
+	{
+		id: 13,
+		img: Work13,
+		title: 'Airdrop Nuxt3 Fullstack',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Nuxt 3 Fullstack App',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'Nuxt3, Vue, Express, Pinia, Charts, Tailwind, MySql ',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://airdrop-app-nuxt-frontend.netlify.app/'>
 						Link to website
 					</a>
 				),
