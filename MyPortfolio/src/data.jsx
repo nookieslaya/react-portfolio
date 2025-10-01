@@ -23,6 +23,7 @@ import Work8 from './assets/bitzone.webp'
 import Work11 from './assets/aiagent.png'
 import Work13 from './assets/airdrop.png'
 import Work15 from './assets/pin.png'
+import Work16 from './assets/dashboard.png'
 import Theme1 from './assets/purple.png'
 import Theme2 from './assets/red.png'
 import Theme3 from './assets/blueviolet.png'
@@ -574,6 +575,36 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://pin-clone-frontend.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 15,
+		img: Work16,
+		title: 'Signalist Fullstack App',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'NextJS Real-Time Stock Market App with Alerts ',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'NextJS, MongoDB,Tailwind, Inngest,TradingView',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://stock-market-lilac-one.vercel.app/'>
 						Link to website
 					</a>
 				),
