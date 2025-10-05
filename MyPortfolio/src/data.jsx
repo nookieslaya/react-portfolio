@@ -20,6 +20,7 @@ import Work5 from './assets/ecommapp.png'
 import Work6 from './assets/nextPortfolio.webp'
 import Work7 from './assets/AirdropApp.webp'
 import Work8 from './assets/bitzone.webp'
+import Work17 from './assets/web3.png'
 import Work11 from './assets/aiagent.png'
 import Work13 from './assets/airdrop.png'
 import Work15 from './assets/pin.png'
@@ -580,8 +581,9 @@ export const portfolio = [
 				),
 			},
 		],
-	},{
-		id: 15,
+	},
+    {
+		id: 16,
 		img: Work16,
 		title: 'Signalist Fullstack App',
 		details: [
@@ -605,6 +607,36 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://stock-market-lilac-one.vercel.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},  {
+		id: 17,
+		img: Work17,
+		title: 'Simple Web3 App',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Simple Web3 App ',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'Solidity · Hardhat 3 (Viem) · React · Tailwind · Sepolia',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://simpleweb3app.netlify.app/'>
 						Link to website
 					</a>
 				),
