@@ -21,6 +21,7 @@ import Work6 from './assets/nextPortfolio.webp'
 import Work7 from './assets/AirdropApp.webp'
 import Work8 from './assets/bitzone.webp'
 import Work17 from './assets/web3.png'
+import Work18 from './assets/apple.png'
 import Work11 from './assets/aiagent.png'
 import Work13 from './assets/airdrop.png'
 import Work15 from './assets/pin.png'
@@ -612,7 +613,8 @@ export const portfolio = [
 				),
 			},
 		],
-	},  {
+	},
+    {
 		id: 17,
 		img: Work17,
 		title: 'Simple Web3 App',
@@ -637,6 +639,37 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://simpleweb3app.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},
+    {
+		id: 18,
+		img: Work18,
+		title: 'Three.js & GSAP',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Three.js & GSAP Apple website',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'React Three.js, GSAP, Zustand,',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://webappl.netlify.app/'>
 						Link to website
 					</a>
 				),
