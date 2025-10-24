@@ -20,6 +20,7 @@ import Work5 from './assets/ecommapp.png'
 import Work6 from './assets/nextPortfolio.webp'
 import Work7 from './assets/AirdropApp.webp'
 import Work8 from './assets/bitzone.webp'
+import Work30 from './assets/songs.png'
 import Work17 from './assets/web3.png'
 import Work18 from './assets/apple.png'
 import Work19 from './assets/xo.png'
@@ -547,6 +548,36 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://celebrated-jalebi-93b42e.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 30,
+		img: Work30,
+		title: 'Simple Songs APP',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Find Your Song Or Album',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'React, Typescript ',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://songsssss.netlify.app/'>
 						Link to website
 					</a>
 				),
