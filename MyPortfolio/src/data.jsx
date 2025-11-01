@@ -21,6 +21,7 @@ import Work6 from './assets/nextPortfolio.webp'
 import Work7 from './assets/AirdropApp.webp'
 import Work8 from './assets/bitzone.webp'
 import Work30 from './assets/songs.png'
+import Work31 from './assets/devevent.png'
 import Work17 from './assets/web3.png'
 import Work18 from './assets/apple.png'
 import Work19 from './assets/xo.png'
@@ -733,6 +734,36 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://webappl.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 31,
+		img: Work31,
+		title: 'DevEvent NextJS 16 app',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Next.JS, Tailwind, MongoDB',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'React, Next.JS, Tailwind, MongoDB',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://dev-events-lac.vercel.app/'>
 						Link to website
 					</a>
 				),
