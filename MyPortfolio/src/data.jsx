@@ -7,9 +7,12 @@ import {
 	FaGraduationCap,
 	FaCode,
 	FaVuejs,
+    FaPython,
+    FaNode
 } from 'react-icons/fa'
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi'
-import { SiNuxtdotjs, SiTailwindcss } from 'react-icons/si'
+import { SiNuxtdotjs, SiTailwindcss, SiFastapi  } from 'react-icons/si'
+import { TbBrandReactNative } from "react-icons/tb";
 
 import Work1 from './assets/wszedziedobrze.jpg'
 import Work2 from './assets/caboverde.jpg'
@@ -21,8 +24,11 @@ import Work6 from './assets/nextPortfolio.webp'
 import Work7 from './assets/AirdropApp.webp'
 import Work8 from './assets/bitzone.webp'
 import Work30 from './assets/songs.png'
-import Work31 from './assets/devevent.png'
+import Work33 from './assets/aura.png'
 import Work17 from './assets/web3.png'
+import Work31 from './assets/devevent.png'
+import Work32 from './assets/JSLint.png'
+import Work34 from './assets/pokemon.png'
 import Work18 from './assets/apple.png'
 import Work19 from './assets/xo.png'
 import Work11 from './assets/aiagent.png'
@@ -237,9 +243,21 @@ export const skills = [
 		background: <DiPhp />,
 	},
 	{
-		id: 10,
-		title: 'SQL',
-		background: <DiMysql />,
+		id: 16,
+		title: 'NodeJS',
+		background: <FaNode />,
+	},{
+		id: 14,
+		title: 'Python',
+		background: <FaPython />,
+	},{
+		id: 15,
+		title: 'FastAPI',
+		background: <SiFastapi />,
+	},,{
+		id: 17,
+		title: 'ReactNative',
+		background: <TbBrandReactNative />,
 	},
 ]
 
@@ -764,6 +782,96 @@ export const portfolio = [
 				title: 'Preview : ',
 				desc: (
 					<a className='portfolio-link' target='_blank' href='https://dev-events-lac.vercel.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 32,
+		img: Work32,
+		title: 'JS Lint',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'A lightweight JavaScript lint playground',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'React, Vite, and Monaco Editor',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://jslint.netlify.app/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 33,
+		img: Work33,
+		title: 'Investment Website',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Concept and development of a modern real estate investment website',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'Wordpress, Sage, Tailwind, ACF',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://mediumorchid-fly-708696.hostingersite.com/'>
+						Link to website
+					</a>
+				),
+			},
+		],
+	},{
+		id: 34,
+		img: Work34,
+		title: 'Investment Website',
+		details: [
+			{
+				icon: <FiFileText />,
+				title: 'Project : ',
+				desc: 'Your Pokemon TCG collection',
+			},
+			{
+				icon: <FiUser />,
+				title: 'Client : ',
+				desc: 'Me',
+			},
+			{
+				icon: <FaCode />,
+				title: 'Language : ',
+				desc: 'React, Tailwind, Node.js, Express, Prisma, PostgreSQL',
+			},
+			{
+				icon: <FiExternalLink />,
+				title: 'Preview : ',
+				desc: (
+					<a className='portfolio-link' target='_blank' href='https://pokemontcgcol.netlify.app/'>
 						Link to website
 					</a>
 				),
