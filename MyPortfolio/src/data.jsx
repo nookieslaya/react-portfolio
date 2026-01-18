@@ -850,7 +850,7 @@ export const portfolio = [
 	},{
 		id: 34,
 		img: Work34,
-		title: 'Investment Website',
+		title: 'Pokemon TCG',
 		details: [
 			{
 				icon: <FiFileText />,
