@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Close from '../assets/close.svg'
 
-const PortfolioItem = ({ img, title, details }) => {
+const PortfolioItem = ({ img, title, details, isLatest }) => {
 	const [modal, setModal] = useState(false)
 
 	const toggleModal = () => {
@@ -9,6 +9,7 @@ const PortfolioItem = ({ img, title, details }) => {
 	}
 	return (
 		<div className='portfolio__item'>
+			{isLatest && <span className='portfolio__badge'>Latest</span>}
 			<img src={img} alt='' className='portfolio__img' />
 			<div className='portfolio__hover' onClick={toggleModal}>
 				<h3 className='portfolio__title'>{title}</h3>

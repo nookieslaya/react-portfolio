@@ -28,10 +28,12 @@ const Home = () => {
                             transition={{duration: 2.5}}
                             delay={0.5}
                 >
-                    I'm a beginner programmer who already has some experience in the field.{}
-                    <br></br>I've been developing my skills in various areas, but now I want to focus on the fascinating
-                    world of
-                    front-end development.
+                    I build modern web interfaces with React and a strong focus on clean UI, performance, and
+                    accessibility.
+                    <br />
+                    I also build and customize WordPress sites and themes for real clients.
+                    <br />
+                    I learn fast, ship real projects end to end, and enjoy turning ideas into polished experiences.
                 </motion.div>
                 <motion.span
                     initial={{opacity: 0, scale: 0.5}}

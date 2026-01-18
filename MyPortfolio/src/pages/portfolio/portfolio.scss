@@ -1,5 +1,59 @@
 @import '../../variables.scss';
 .portfolio {
+	&__controls {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		margin: 18px auto 26px;
+	}
+
+	&__control {
+		flex: 1 1 260px;
+		min-height: 44px;
+		padding: 10px 12px;
+		border-radius: 10px;
+		width: 100%;
+		max-width: 100%;
+		border: 1px solid $border-color;
+		background-color: $container-color;
+		color: $title-color;
+		font-size: $normal-font-size;
+		outline: none;
+		padding-right: 20px;
+	}
+
+	&__select {
+		position: relative;
+		flex: 1 1 260px;
+		max-width: 100%;
+	}
+
+	&__select::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 16px;
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 7px solid $title-color;
+		transform: translateY(-25%);
+		pointer-events: none;
+	}
+
+	&__control--select {
+		padding-right: 42px;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: none;
+	}
+
+	&__control:focus {
+		border-color: $first-color;
+	}
+
 	&__container {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -26,6 +80,21 @@
 		border-radius: 10px;
 		overflow: hidden;
 		cursor: pointer;
+	}
+	&__badge {
+		position: absolute;
+		top: 12px;
+		left: 12px;
+		padding: 4px 10px;
+		border-radius: 999px;
+		background-color: $first-color;
+		color: $text-white;
+		font-size: $tiny-font-size;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		z-index: 2;
+		pointer-events: none;
+		box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 	}
 	&__img {
 		height: 250px;
@@ -54,6 +123,11 @@
 	}
 	&__item:hover .portfolio__title {
 		transform: translateY(0);
+	}
+
+	&__empty {
+		margin-top: 16px;
+		color: $text-color;
 	}
 }
 

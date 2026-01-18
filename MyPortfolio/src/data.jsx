@@ -1,943 +1,1036 @@
 import {
-	FaHome,
-	FaUser,
-	FaFolderOpen,
-	FaEnvelopeOpen,
-	FaBriefcase,
-	FaGraduationCap,
-	FaCode,
-	FaVuejs,
-    FaPython,
-    FaNode
-} from 'react-icons/fa'
-import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi'
-import { SiNuxtdotjs, SiTailwindcss, SiFastapi  } from 'react-icons/si'
+  FaHome,
+  FaUser,
+  FaFolderOpen,
+  FaEnvelopeOpen,
+  FaBriefcase,
+  FaGraduationCap,
+  FaCode,
+  FaVuejs,
+  FaPython,
+  FaNode,
+} from "react-icons/fa";
+import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
+import { SiNuxtdotjs, SiTailwindcss, SiFastapi } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
-import Work1 from './assets/wszedziedobrze.jpg'
-import Work2 from './assets/caboverde.jpg'
-import Work3 from './assets/work3.png'
-import Work9 from './assets/sum.webp'
-import Work4 from './assets/muala.png'
-import Work5 from './assets/ecommapp.png'
-import Work6 from './assets/nextPortfolio.webp'
-import Work7 from './assets/AirdropApp.webp'
-import Work8 from './assets/bitzone.webp'
-import Work30 from './assets/songs.png'
-import Work33 from './assets/aura.png'
-import Work17 from './assets/web3.png'
-import Work31 from './assets/devevent.png'
-import Work32 from './assets/JSLint.png'
-import Work34 from './assets/pokemon.png'
-import Work18 from './assets/apple.png'
-import Work19 from './assets/xo.png'
-import Work11 from './assets/aiagent.png'
-import Work13 from './assets/airdrop.png'
-import Work15 from './assets/pin.png'
-import Work16 from './assets/dashboard.png'
-import Theme1 from './assets/purple.png'
-import Theme2 from './assets/red.png'
-import Theme3 from './assets/blueviolet.png'
-import Theme4 from './assets/blue.png'
-import Theme5 from './assets/goldenrod.png'
-import Theme6 from './assets/magenta.png'
-import Theme7 from './assets/yellowgreen.png'
-import Theme8 from './assets/orange.png'
-import Theme9 from './assets/green.png'
-import Theme10 from './assets/yellow.png'
-import { DiJsBadge, DiCss3, DiHtml5, DiWordpress, DiReact, DiMysql, DiPhp } from 'react-icons/di'
-const style = { color: 'white', fontSize: '1.5em' }
+import Work1 from "./assets/wszedziedobrze.jpg";
+import Work2 from "./assets/caboverde.jpg";
+import Work3 from "./assets/work3.png";
+import Work9 from "./assets/sum.webp";
+import Work4 from "./assets/muala.png";
+import Work5 from "./assets/ecommapp.png";
+import Work6 from "./assets/nextPortfolio.webp";
+import Work7 from "./assets/AirdropApp.webp";
+import Work8 from "./assets/bitzone.webp";
+import Work30 from "./assets/songs.png";
+import Work33 from "./assets/aura.png";
+import Work17 from "./assets/web3.png";
+import Work31 from "./assets/devevent.png";
+import Work32 from "./assets/JSLint.png";
+import Work34 from "./assets/pokemon.png";
+import Work18 from "./assets/apple.png";
+import Work19 from "./assets/xo.png";
+import Work11 from "./assets/aiagent.png";
+import Work13 from "./assets/airdrop.png";
+import Work15 from "./assets/pin.png";
+import Work16 from "./assets/dashboard.png";
+import Theme1 from "./assets/purple.png";
+import Theme2 from "./assets/red.png";
+import Theme3 from "./assets/blueviolet.png";
+import Theme4 from "./assets/blue.png";
+import Theme5 from "./assets/goldenrod.png";
+import Theme6 from "./assets/magenta.png";
+import Theme7 from "./assets/yellowgreen.png";
+import Theme8 from "./assets/orange.png";
+import Theme9 from "./assets/green.png";
+import Theme10 from "./assets/yellow.png";
+import {
+  DiJsBadge,
+  DiCss3,
+  DiHtml5,
+  DiWordpress,
+  DiReact,
+  DiMysql,
+  DiPhp,
+} from "react-icons/di";
+const style = { color: "white", fontSize: "1.5em" };
 
 export const links = [
-	{
-		id: 1,
-		name: 'Home',
-		icon: <FaHome className='nav__icon' />,
-		path: '/',
-	},
+  {
+    id: 1,
+    name: "Home",
+    icon: <FaHome className="nav__icon" />,
+    path: "/",
+  },
 
-	{
-		id: 2,
-		name: 'About',
-		icon: <FaUser className='nav__icon' />,
-		path: '/about',
-	},
+  {
+    id: 2,
+    name: "About",
+    icon: <FaUser className="nav__icon" />,
+    path: "/about",
+  },
 
-	{
-		id: 3,
-		name: 'Portfolio',
-		icon: <FaFolderOpen className='nav__icon' />,
-		path: '/portfolio',
-	},
+  {
+    id: 3,
+    name: "Portfolio",
+    icon: <FaFolderOpen className="nav__icon" />,
+    path: "/portfolio",
+  },
 
-	{
-		id: 4,
-		name: 'Contact',
-		icon: <FaEnvelopeOpen className='nav__icon' />,
-		path: '/contact',
-	},
-]
+  {
+    id: 4,
+    name: "Contact",
+    icon: <FaEnvelopeOpen className="nav__icon" />,
+    path: "/contact",
+  },
+];
 
 export const personalInfo = [
-	{
-		id: 1,
-		title: 'First Name : ',
-		description: 'Radek',
-	},
+  {
+    id: 1,
+    title: "First Name : ",
+    description: "Radek",
+  },
 
-	{
-		id: 2,
-		title: 'Last Name : ',
-		description: 'Dumin',
-	},
+  {
+    id: 2,
+    title: "Last Name : ",
+    description: "Dumin",
+  },
 
-	{
-		id: 3,
-		title: 'Age : ',
-		description: '35 Years',
-	},
+  {
+    id: 3,
+    title: "Age : ",
+    description: "35 Years",
+  },
 
-	{
-		id: 4,
-		title: 'Nationality : ',
-		description: 'Polish',
-	},
+  {
+    id: 4,
+    title: "Nationality : ",
+    description: "Polish",
+  },
 
-	{
-		id: 5,
-		title: 'Available : ',
-		description: 'immediately',
-	},
+  {
+    id: 5,
+    title: "Available : ",
+    description: "immediately",
+  },
 
-	{
-		id: 6,
-		title: 'City : ',
-		description: 'Kielce',
-	},
+  {
+    id: 6,
+    title: "City : ",
+    description: "Kielce",
+  },
 
-	{
-		id: 7,
-		title: 'Phone : ',
-		description: '+48783812846',
-	},
+  {
+    id: 7,
+    title: "Phone : ",
+    description: "+48783812846",
+  },
 
-	{
-		id: 8,
-		title: 'Email : ',
-		description: 'radek.dumin@gmail.com',
-	},
+  {
+    id: 8,
+    title: "Email : ",
+    description: "radek.dumin@gmail.com",
+  },
 
-	{
-		id: 10,
-		title: 'Langages : ',
-		description: 'Polish, English',
-	},
-	{
-		id: 11,
-		title: 'Github : ',
-		description: (
-			<a target='_blank' href='https://github.com/nookieslaya'>
-				https://github.com/nookieslaya
-			</a>
-		),
-	},
-]
+  {
+    id: 10,
+    title: "Langages : ",
+    description: "Polish, English",
+  },
+  {
+    id: 11,
+    title: "Github : ",
+    description: (
+      <a target="_blank" href="https://github.com/nookieslaya">
+        https://github.com/nookieslaya
+      </a>
+    ),
+  },
+];
 
 export const stats = [
-	{
-		id: 1,
-		no: '4,5',
-		title: 'Years of <br /> Experience',
-	},
+  {
+    id: 1,
+    no: "5,5",
+    title: "Years of <br /> Experience",
+  },
 
-	{
-		id: 2,
-		no: '30+',
-		title: 'Completed <br /> Projects',
-	},
-]
+  {
+    id: 2,
+    no: "30+",
+    title: "Completed <br /> Projects",
+  },
+];
 
 export const resume = [
-	{
-		id: 3,
-		category: 'experience',
-		icon: <FaBriefcase />,
-		year: '09.2024 - 09.2025',
-		title: 'Frontend Developer <span> Cogitech </span>',
-		desc: 'Creating and developing websites and web applications based on prepared designs.',
-		desc2:
-			'Main responsibilities included building website templates using ACF and WordPress, as well as developing web applications primarily with Vue, Nuxt 3, Tailwind CSS, and Nuxt UI.',
-	},
-	{
-		id: 2,
-		category: 'experience',
-		icon: <FaBriefcase />,
-		year: '10.2023 - 12.2023',
-		title: 'Junior Software Developer <span> Infonetax </span>',
-		desc: 'Working on changing the design of the cloud version of the Mobevo program. Introducing new functionality in the program.',
-		desc2:
-			'My main task was to completely change the appearance of the program based on the previously designed design, adjust the appearance to mobile devices. Additionally I introduced new functionalities in the program.',
-	},
-	{
-		id: 1,
-		category: 'experience',
-		icon: <FaBriefcase />,
-		year: '10.2021 - 06.2023',
-		title: 'Web Developer <span> MassInternet </span>',
-		desc: 'Creating websites for individual clients based on prepared designs. Contact and collaboration with key clients.',
-		desc2:
-			'My main task was to create websites, online stores, and templates for the WordPress CMS. For website development, I primarily used HTML, SCSS, JavaScript, PHP, WordPress + ACF. I also worked with WooCommerce and Shoper online stores.',
-	},
-]
+  {
+    id: 3,
+    category: "experience",
+    icon: <FaBriefcase />,
+    year: "09.2024 - 09.2025",
+    title: "Frontend Developer <span> Cogitech </span>",
+    desc: "Creating and developing websites and web applications based on prepared designs.",
+    desc2:
+      "Main responsibilities included building website templates using ACF and WordPress, as well as developing web applications primarily with Vue, Nuxt 3, Tailwind CSS, and Nuxt UI.",
+  },
+  {
+    id: 2,
+    category: "experience",
+    icon: <FaBriefcase />,
+    year: "10.2023 - 12.2023",
+    title: "Junior Software Developer <span> Infonetax </span>",
+    desc: "Working on changing the design of the cloud version of the Mobevo program. Introducing new functionality in the program.",
+    desc2:
+      "My main task was to completely change the appearance of the program based on the previously designed design, adjust the appearance to mobile devices. Additionally I introduced new functionalities in the program.",
+  },
+  {
+    id: 1,
+    category: "experience",
+    icon: <FaBriefcase />,
+    year: "10.2021 - 06.2023",
+    title: "Web Developer <span> MassInternet </span>",
+    desc: "Creating websites for individual clients based on prepared designs. Contact and collaboration with key clients.",
+    desc2:
+      "My main task was to create websites, online stores, and templates for the WordPress CMS. For website development, I primarily used HTML, SCSS, JavaScript, PHP, WordPress + ACF. I also worked with WooCommerce and Shoper online stores.",
+  },
+];
 
 export const skills = [
-	{
-		id: 1,
-		title: 'Html',
-		background: <DiHtml5 />,
-	},
+  {
+    id: 1,
+    title: "Html",
+    background: <DiHtml5 />,
+  },
 
-	{
-		id: 2,
-		title: 'Javascript',
-		background: <DiJsBadge />,
-	},
+  {
+    id: 2,
+    title: "Javascript",
+    background: <DiJsBadge />,
+  },
 
-	{
-		id: 3,
-		title: 'Css',
-		background: <DiCss3 />,
-	},
-	{
-		id: 13,
-		title: 'Tailwind',
-		background: <SiTailwindcss />,
-	},
+  {
+    id: 3,
+    title: "Css",
+    background: <DiCss3 />,
+  },
+  {
+    id: 13,
+    title: "Tailwind",
+    background: <SiTailwindcss />,
+  },
 
-	{
-		id: 5,
-		title: 'Wordpress',
-		background: <DiWordpress />,
-	},
+  {
+    id: 5,
+    title: "Wordpress",
+    background: <DiWordpress />,
+  },
 
-	{
-		id: 8,
-		title: 'React',
-		background: <DiReact />,
-	},
+  {
+    id: 8,
+    title: "React",
+    background: <DiReact />,
+  },
 
-	{
-		id: 12,
-		title: 'Nuxt 3',
-		background: <SiNuxtdotjs />,
-	},
+  {
+    id: 12,
+    title: "Nuxt 3",
+    background: <SiNuxtdotjs />,
+  },
 
-	{
-		id: 11,
-		title: 'Vue',
-		background: <FaVuejs />,
-	},
-	{
-		id: 9,
-		title: 'PHP',
-		background: <DiPhp />,
-	},
-	{
-		id: 16,
-		title: 'NodeJS',
-		background: <FaNode />,
-	},{
-		id: 14,
-		title: 'Python',
-		background: <FaPython />,
-	},{
-		id: 15,
-		title: 'FastAPI',
-		background: <SiFastapi />,
-	},,{
-		id: 17,
-		title: 'ReactNative',
-		background: <TbBrandReactNative />,
-	},
-]
+  {
+    id: 11,
+    title: "Vue",
+    background: <FaVuejs />,
+  },
+  {
+    id: 9,
+    title: "PHP",
+    background: <DiPhp />,
+  },
+  {
+    id: 16,
+    title: "NodeJS",
+    background: <FaNode />,
+  },
+  {
+    id: 14,
+    title: "Python",
+    background: <FaPython />,
+  },
+  {
+    id: 15,
+    title: "FastAPI",
+    background: <SiFastapi />,
+  },
+  ,
+  {
+    id: 17,
+    title: "ReactNative",
+    background: <TbBrandReactNative />,
+  },
+];
 
 export const portfolio = [
-	{
-		id: 1,
-		img: Work1,
-		title: 'Website',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Website',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Wife :)',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'HTML, SCSS, JavaScript, PHP, Wordpress + ACF',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://www.wszedzie-dobrze.pl'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
+  {
+    id: 1,
+    img: Work1,
+    title: "Website",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Website",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Wife :)",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "HTML, SCSS, JavaScript, PHP, Wordpress + ACF",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://www.wszedzie-dobrze.pl"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
 
-	{
-		id: 2,
-		img: Work2,
-		title: 'Website',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'React Website',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Tailwind',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://gilded-sunflower-82ea89.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-	{
-		id: 3,
-		img: Work3,
-		title: 'React App',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'React App',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Tailwind, Firebase',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://cryptogrid-b6fb7.web.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-	{
-		id: 4,
-		img: Work4,
-		title: 'React App',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'React App',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Tailwind, Leaflet, OpenStreet Map',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://dreamy-pixie-302b6f.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-    {
-		id: 19,
-		img: Work19,
-		title: 'Scroll‑Triggered 3D Tic‑Tac‑Toe ',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Scroll‑Triggered 3D Tic‑Tac‑Toe (React, Three.js, Framer Motion)',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Tailwind,Three.js, Framer Motion',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://scrolltriggeredxo.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-	{
-		id: 5,
-		img: Work9,
-		title: 'AI Summarizer',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Powered by AI article summarizer',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Tailwind, OpenAi ',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://creative-fenglisu-c99f3d.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-	{
-		id: 6,
-		img: Work6,
-		title: 'Next.JS Portfolio Website',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Next.JS Portfolio Website',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'Next.JS, Tailwind, FM, Aceternity UI',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://serene-dusk-9698e4.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-	// {
-	// 	id: 7,
-	// 	img: Work7,
-	// 	title: 'AirdropApp',
-	// 	details: [
-	// 		{
-	// 			icon: <FiFileText />,
-	// 			title: 'Project : ',
-	// 			desc: 'MERN React App ',
-	// 		},
-	// 		{
-	// 			icon: <FiUser />,
-	// 			title: 'Client : ',
-	// 			desc: 'Me',
-	// 		},
-	// 		{
-	// 			icon: <FaCode />,
-	// 			title: 'Language : ',
-	// 			desc: 'React,Zustand, TypeScript, MERN, Tailwind, Framer Motion, Aceternity UI, ShadCn',
-	// 		},
-	// 		{
-	// 			icon: <FiExternalLink />,
-	// 			title: 'Preview : ',
-	// 			desc: (
-	// 				<a className='portfolio-link' target='_blank' href='https://grand-scone-4dcf70.netlify.app/'>
-	// 					Link to website
-	// 				</a>
-	// 			),
-	// 		},
-	// 	],
-	// },
-	{
-		id: 8,
-		img: Work8,
-		title: 'BitZone Next.JS website',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'React GSAP CryptoMarket Website ',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React,GSAP,Tailwind, ',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://cosmic-pasca-99384c.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-	{
-		id: 11,
-		img: Work11,
-		title: 'Simple AI Agent',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Simple browser only AI Agent',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Typescript ',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://celebrated-jalebi-93b42e.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},{
-		id: 30,
-		img: Work30,
-		title: 'Simple Songs APP',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Find Your Song Or Album',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Typescript ',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://songsssss.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-	{
-		id: 13,
-		img: Work13,
-		title: 'Airdrop Nuxt3 Fullstack',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Nuxt 3 Fullstack App',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'Nuxt3, Vue, Express, Pinia, Charts, Tailwind, MySql ',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://airdrop-app-nuxt-frontend.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-	{
-		id: 15,
-		img: Work15,
-		title: 'Pinterest Fullstack clone',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'React Node.js MongoDB  ',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React Node.js MongoDB, JWT, Zustand, REST API, Photo Editing ',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://pin-clone-frontend.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-    {
-		id: 16,
-		img: Work16,
-		title: 'Signalist Fullstack App',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'NextJS Real-Time Stock Market App with Alerts ',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'NextJS, MongoDB,Tailwind, Inngest,TradingView',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://stock-market-lilac-one.vercel.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-    {
-		id: 17,
-		img: Work17,
-		title: 'Simple Web3 App',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Simple Web3 App ',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'Solidity · Hardhat 3 (Viem) · React · Tailwind · Sepolia',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://simpleweb3app.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-    {
-		id: 18,
-		img: Work18,
-		title: 'Three.js & GSAP',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Three.js & GSAP Apple website',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React Three.js, GSAP, Zustand,',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://webappl.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},{
-		id: 31,
-		img: Work31,
-		title: 'DevEvent NextJS 16 app',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Next.JS, Tailwind, MongoDB',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Next.JS, Tailwind, MongoDB',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://dev-events-lac.vercel.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},{
-		id: 32,
-		img: Work32,
-		title: 'JS Lint',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'A lightweight JavaScript lint playground',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Vite, and Monaco Editor',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://jslint.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},{
-		id: 33,
-		img: Work33,
-		title: 'Investment Website',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Concept and development of a modern real estate investment website',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'Wordpress, Sage, Tailwind, ACF',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://mediumorchid-fly-708696.hostingersite.com/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},{
-		id: 34,
-		img: Work34,
-		title: 'Pokemon TCG',
-		details: [
-			{
-				icon: <FiFileText />,
-				title: 'Project : ',
-				desc: 'Your Pokemon TCG collection',
-			},
-			{
-				icon: <FiUser />,
-				title: 'Client : ',
-				desc: 'Me',
-			},
-			{
-				icon: <FaCode />,
-				title: 'Language : ',
-				desc: 'React, Tailwind, Node.js, Express, Prisma, PostgreSQL',
-			},
-			{
-				icon: <FiExternalLink />,
-				title: 'Preview : ',
-				desc: (
-					<a className='portfolio-link' target='_blank' href='https://pokemontcgcol.netlify.app/'>
-						Link to website
-					</a>
-				),
-			},
-		],
-	},
-]
+  {
+    id: 2,
+    img: Work2,
+    title: "Website",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "React Website",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Tailwind",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://gilded-sunflower-82ea89.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 3,
+    img: Work3,
+    title: "React App",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "React App",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Tailwind, Firebase",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://cryptogrid-b6fb7.web.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: Work4,
+    title: "React App",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "React App",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Tailwind, Leaflet, OpenStreet Map",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://dreamy-pixie-302b6f.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 19,
+    img: Work19,
+    title: "Scroll‑Triggered 3D Tic‑Tac‑Toe ",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Scroll‑Triggered 3D Tic‑Tac‑Toe (React, Three.js, Framer Motion)",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Tailwind,Three.js, Framer Motion",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://scrolltriggeredxo.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 5,
+    img: Work9,
+    title: "AI Summarizer",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Powered by AI article summarizer",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Tailwind, OpenAi ",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://creative-fenglisu-c99f3d.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 6,
+    img: Work6,
+    title: "Next.JS Portfolio Website",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Next.JS Portfolio Website",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "Next.JS, Tailwind, FM, Aceternity UI",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://serene-dusk-9698e4.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  // {
+  // 	id: 7,
+  // 	img: Work7,
+  // 	title: 'AirdropApp',
+  // 	details: [
+  // 		{
+  // 			icon: <FiFileText />,
+  // 			title: 'Project : ',
+  // 			desc: 'MERN React App ',
+  // 		},
+  // 		{
+  // 			icon: <FiUser />,
+  // 			title: 'Client : ',
+  // 			desc: 'Me',
+  // 		},
+  // 		{
+  // 			icon: <FaCode />,
+  // 			title: 'Language : ',
+  // 			desc: 'React,Zustand, TypeScript, MERN, Tailwind, Framer Motion, Aceternity UI, ShadCn',
+  // 		},
+  // 		{
+  // 			icon: <FiExternalLink />,
+  // 			title: 'Preview : ',
+  // 			desc: (
+  // 				<a className='portfolio-link' target='_blank' href='https://grand-scone-4dcf70.netlify.app/'>
+  // 					Link to website
+  // 				</a>
+  // 			),
+  // 		},
+  // 	],
+  // },
+  {
+    id: 8,
+    img: Work8,
+    title: "BitZone Next.JS website",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "React GSAP CryptoMarket Website ",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React,GSAP,Tailwind, ",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://cosmic-pasca-99384c.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 11,
+    img: Work11,
+    title: "Simple AI Agent",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Simple browser only AI Agent",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Typescript ",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://celebrated-jalebi-93b42e.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 30,
+    img: Work30,
+    title: "Simple Songs APP",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Find Your Song Or Album",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Typescript ",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://songsssss.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 13,
+    img: Work13,
+    title: "Airdrop Nuxt3 Fullstack",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Nuxt 3 Fullstack App",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "Nuxt3, Vue, Express, Pinia, Charts, Tailwind, MySql ",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://airdrop-app-nuxt-frontend.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 15,
+    img: Work15,
+    title: "Pinterest Fullstack clone",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "React Node.js MongoDB  ",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React Node.js MongoDB, JWT, Zustand, REST API, Photo Editing ",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://pin-clone-frontend.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 16,
+    img: Work16,
+    title: "Signalist Fullstack App",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "NextJS Real-Time Stock Market App with Alerts ",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "NextJS, MongoDB,Tailwind, Inngest,TradingView",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://stock-market-lilac-one.vercel.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 17,
+    img: Work17,
+    title: "Simple Web3 App",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Simple Web3 App ",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "Solidity, Hardhat 3 (Viem), React, Tailwind,  Sepolia",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://simpleweb3app.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 18,
+    img: Work18,
+    title: "Three.js & GSAP",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Three.js & GSAP Apple website",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Three.js, GSAP, Zustand,",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://webappl.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 31,
+    img: Work31,
+    title: "DevEvent NextJS 16 app",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Next.JS, Tailwind, MongoDB",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Next.JS, Tailwind, MongoDB",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://dev-events-lac.vercel.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 32,
+    img: Work32,
+    title: "JS Lint",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "A lightweight JavaScript lint playground",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Vite, and Monaco Editor",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://jslint.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 33,
+    img: Work33,
+    title: "Investment Website",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Concept and development of a modern real estate investment website",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "Wordpress, Sage, Tailwind, ACF",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://mediumorchid-fly-708696.hostingersite.com/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 34,
+    img: Work34,
+    title: "Pokemon TCG",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Your Pokemon TCG collection",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "React, Tailwind, Node.js, Express, Prisma, PostgreSQL",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://pokemontcgcol.netlify.app/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+];
 
 export const themes = [
-	{
-		id: 1,
-		img: Theme1,
-		color: 'hsl(252, 35%, 51%)',
-	},
+  {
+    id: 1,
+    img: Theme1,
+    color: "hsl(252, 35%, 51%)",
+  },
 
-	{
-		id: 2,
-		img: Theme2,
-		color: 'hsl(4, 93%, 54%)',
-	},
+  {
+    id: 2,
+    img: Theme2,
+    color: "hsl(4, 93%, 54%)",
+  },
 
-	{
-		id: 3,
-		img: Theme3,
-		color: 'hsl(271, 76%, 53%)',
-	},
+  {
+    id: 3,
+    img: Theme3,
+    color: "hsl(271, 76%, 53%)",
+  },
 
-	{
-		id: 4,
-		img: Theme4,
-		color: 'hsl(225, 73%, 57%)',
-	},
+  {
+    id: 4,
+    img: Theme4,
+    color: "hsl(225, 73%, 57%)",
+  },
 
-	{
-		id: 5,
-		img: Theme5,
-		color: 'hsl(43, 74%, 49%)',
-	},
+  {
+    id: 5,
+    img: Theme5,
+    color: "hsl(43, 74%, 49%)",
+  },
 
-	{
-		id: 6,
-		img: Theme6,
-		color: 'hsl(339, 81%, 66%)',
-	},
+  {
+    id: 6,
+    img: Theme6,
+    color: "hsl(339, 81%, 66%)",
+  },
 
-	{
-		id: 7,
-		img: Theme7,
-		color: 'hsl(80, 61%, 50%)',
-	},
+  {
+    id: 7,
+    img: Theme7,
+    color: "hsl(80, 61%, 50%)",
+  },
 
-	{
-		id: 8,
-		img: Theme8,
-		color: 'hsl(19, 96%, 52%)',
-	},
+  {
+    id: 8,
+    img: Theme8,
+    color: "hsl(19, 96%, 52%)",
+  },
 
-	{
-		id: 9,
-		img: Theme9,
-		color: 'hsl(88, 65%, 43%)',
-	},
+  {
+    id: 9,
+    img: Theme9,
+    color: "hsl(88, 65%, 43%)",
+  },
 
-	{
-		id: 10,
-		img: Theme10,
-		color: 'hsl(42, 100%, 50%)',
-	},
-]
+  {
+    id: 10,
+    img: Theme10,
+    color: "hsl(42, 100%, 50%)",
+  },
+];
