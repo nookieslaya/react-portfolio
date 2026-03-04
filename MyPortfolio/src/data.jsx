@@ -31,6 +31,7 @@ import Work32 from "./assets/JSLint.png";
 import Work34 from "./assets/pokemon.png";
 import Work35 from "./assets/photo.png";
 import Work36 from "./assets/jobtracker.png";
+import Work37 from "./assets/pfl.png";
 import Work18 from "./assets/apple.png";
 import Work19 from "./assets/xo.png";
 import Work11 from "./assets/aiagent.png";
@@ -1001,6 +1002,41 @@ export const portfolio = [
             className="portfolio-link"
             target="_blank"
             href="https://photography.rstudio.site/"
+          >
+            Link to website
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 37,
+    img: Work37,
+    title: "Personal finance app",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "",
+      },
+      {
+        icon: <FiUser />,
+        title: "Client : ",
+        desc: "Me",
+      },
+      {
+        icon: <FaCode />,
+        title: "Language : ",
+        desc: "Next.js, React,Tailwind TypeScript, BetterAuth, MongoDB, Charts",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            className="portfolio-link"
+            target="_blank"
+            href="https://personal-finance-lite.vercel.app"
           >
             Link to website
           </a>
